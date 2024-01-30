@@ -1,0 +1,28 @@
+,
+        {
+            "accessory": "Http",
+            "name": "Space Light",
+            "switchHandling": "realtime",
+            "http_method": "GET",
+            "on_url": "http://skylite/POWER_ON",
+            "off_url": "http://skylite/POWER_OFF",
+            "status_url": "http://skylite/STATUS",
+            "status_on": 1,
+            "status_off": 0,
+            "service": "Light",
+            "brightnessHandling": "yes",
+            "brightness_url": "http://skylite/BRIGHTNESS/%b",
+            "brightnesslvl_url": "http://skylite/BRIGHTNESS_STATUS"
+        },
+        {
+            "accessory": "Http",
+            "name": "Space Rotation",
+            "switchHandling": "realtime",
+            "http_method": "GET",
+            "on_url": "http://skylite/ROTATION_ON",
+            "off_url": "http://skylite/ROTATION_OFF",
+            "status_url": "http://skylite/ROTATION_STATUS",
+            "status_on": 1,
+            "status_off": 0,
+            "service": "Switch"
+        }
